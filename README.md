@@ -42,7 +42,7 @@ dependencies {
 2) Generate the methods surfaceCreated, surfaceChanged, surfaceDestroyed.
 
 ```
-	@Override
+    @Override
     public void surfaceCreated(SurfaceHolder holder) { 
     	CartesianPlotter.setStyle(Paint.Style.STROKE);
         CartesianPlotter.getPaint().setStrokeWidth(10);
