@@ -8,7 +8,7 @@ This library is a simple interface to facilitate the way to graph points in a Ca
 
 You can download library files from JCenter or GitHub.
 
-* [LatestVersion](https://bintray.com/ederdoski/Maven/SimpleCartesianPlotter) - is 1.0.1
+* [LatestVersion is 1.0.1](https://bintray.com/ederdoski/Maven/SimpleCartesianPlotter)
 
 ```
 dependencies {
