@@ -1,5 +1,7 @@
 # Android Simple Cartesian Plotter
 
+![Example](img/simpleCartesianPlotter.gif)
+
 ## Introduction
 
 This library is a simple interface to facilitate the way to graph points in a Cartesian plane, additionally you can create simple polygons, it was done with the native app of Canvas. Develop this small library because after searching several libraries in different sites I did not find any that would help me with my problem, I hope it will save you programming time :).
@@ -13,6 +15,10 @@ You can download library files from JCenter or GitHub.
 Add the following in your app's build.gradle file:
 
 ```
+repositories {
+  jcenter()
+}
+
 dependencies {
     implementation "com.ederdoski.simple-cartesian-plotter:simplecartesianplotter:1.0.1"
 }
@@ -174,7 +180,7 @@ CartesianPlotter.setPointSaveColor()
 CartesianPlotter.setFenceColor()
 ```
 
-![Warning](img/warning.png)**Important**![Warning](img/warning.png)
+![Warning](img/warning.png) **Important** ![Warning](img/warning.png)
 
 Currently the methods that involve setColor, receive an int parameter of type color in encoded format, if you want to modify the color of some element I advise you to use the native interface of Colors of Android, example:
 
