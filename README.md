@@ -174,7 +174,7 @@ CartesianPlotter.setPointSaveColor()
 CartesianPlotter.setFenceColor()
 ```
 
-**Important**
+![Warning](img/warning.png)**Important**![Warning](img/warning.png)
 
 Currently the methods that involve setColor, receive an int parameter of type color in encoded format, if you want to modify the color of some element I advise you to use the native interface of Colors of Android, example:
 
