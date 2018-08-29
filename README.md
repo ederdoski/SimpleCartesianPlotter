@@ -8,7 +8,8 @@ This library is a simple interface to facilitate the way to graph points in a Ca
 
 You can download library files from JCenter or GitHub.
 
-**LatestVersion is 1.0.1**
+****
+[LatestVersion is 1.0.1](https://bintray.com/ederdoski/Maven/SimpleCartesianPlotter)
 
 Add the following in your app's build.gradle file:
 
@@ -25,7 +26,7 @@ dependencies {
 1) Create a surfaceView object, this will be your canvas.
 
 ```
-	<SurfaceView
+    <SurfaceView
         android:id="@+id/surfaceView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -36,7 +37,7 @@ dependencies {
 1) Implement in your main class SurfaceHolder.Callback
 
 ```
-	implements SurfaceHolder.Callback
+    implements SurfaceHolder.Callback
 ```
 
 2) Generate the methods surfaceCreated, surfaceChanged, surfaceDestroyed.
@@ -61,13 +62,13 @@ dependencies {
 3) Instantiate the class CartesianPlotter
 
 ```
-	new CartesianPlotter(this, surfaceView.getHolder());
+    new CartesianPlotter(this, surfaceView.getHolder());
 ```
 
 4) Instantiate the following callback
 
 ```
-	CartesianPlotter.getSurfaceHolder().addCallback(this);
+    CartesianPlotter.getSurfaceHolder().addCallback(this);
 ```
 
 * **Draw in Plane**
@@ -75,7 +76,7 @@ dependencies {
 1) Start editing the pixels in the surface. 
 
 ```
-	CartesianPlotter.getSurfaceHolder().addCallback(this);
+    CartesianPlotter.getSurfaceHolder().addCallback(this);
 ```
 
 2) Once you verify that your canvas is not null, invoke the refresh method to initialize the canvas.
@@ -85,21 +86,21 @@ dependencies {
 
 3) Then indicate to the drawPoint () method, the coordinates of the point to be drawn, remember to multiply your coordinate by the desired scale (zoom).
 ```
-	float valueX = cx * CartesianPlotter.getScale();
+    float valueX = cx * CartesianPlotter.getScale();
     float valueY = cy * CartesianPlotter.getScale();
 
-	CartesianPlotter.drawPoint(lyCanvas, valueX, valueY, radius);
+    CartesianPlotter.drawPoint(lyCanvas, valueX, valueY, radius);
 ```
 
 4) Finally, release your canvas and publish your update
 ```
-	CartesianPlotter.getSurfaceHolder().unlockCanvasAndPost(CartesianPlotter.getCanvas());
+    CartesianPlotter.getSurfaceHolder().unlockCanvasAndPost(CartesianPlotter.getCanvas());
 ```
 
 You should have a piece of code like this:
 
 ```
-	if (CartesianPlotter.getCanvas() != null) {
+    if (CartesianPlotter.getCanvas() != null) {
 
         CartesianPlotter.refresh(lyCanvas, aPoints, drawPoligon);
 
@@ -136,42 +137,42 @@ This method is responsible for placing a point in the plane.
 4) A value that indicates the radius of the point to be plotted.
 
 ```
-CartesianPlotter.drawPoint();
+    CartesianPlotter.drawPoint();
 ```
 
 * Set the size of the scale on the canvas (zoom)
 ```
-CartesianPlotter.setScale()
+    CartesianPlotter.setScale()
 ```
 
 * get the size of the scale on the canvas (zoom)
 ```
-CartesianPlotter.getScale()
+    CartesianPlotter.getScale()
 ```
 
 * Set background color of canvas
 ```
-CartesianPlotter.setBackgroundColor()
+    CartesianPlotter.setBackgroundColor()
 ```
 
 * Set color of lines in plane
 ```
-CartesianPlotter.setColorPlane()
+    CartesianPlotter.setColorPlane()
 ```
 
 * Set the color of the current position
 ```
-CartesianPlotter.setPointColor()
+    CartesianPlotter.setPointColor()
 ```
 
 * Set color of position saved
 ```
-CartesianPlotter.setPointSaveColor()
+    CartesianPlotter.setPointSaveColor()
 ```
 
 * Set the color of the polygon lines
 ```
-CartesianPlotter.setFenceColor()
+    CartesianPlotter.setFenceColor()
 ```
 
 
