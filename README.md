@@ -78,7 +78,7 @@ dependencies {
 
 2) Once you verify that your canvas is not null, invoke the refresh method to initialize the canvas.
 ```
-	CartesianPlotter.refresh(lyCanvas, aPoints, drawPoligon);
+    CartesianPlotter.refresh(lyCanvas, aPoints, drawPoligon);
 ```
 
 3) Then indicate to the drawPoint () method, the coordinates of the point to be drawn, remember to multiply your coordinate by the desired scale (zoom).
@@ -121,7 +121,7 @@ This method is responsible for drawing the plane, and previously saved points in
 3) A boolean variable that indicates whether or not you want to draw the polygon.
 
 ```
-CartesianPlotter.refresh();
+    CartesianPlotter.refresh();
 ```
 
 This method is responsible for placing a point in the plane.
