@@ -10,7 +10,7 @@ This library is a simple interface to facilitate the way to graph points in a Ca
 
 You can download library files from JCenter or GitHub.
 
-**[LatestVersion is 1.0.1](https://bintray.com/ederdoski/Maven/SimpleCartesianPlotter)**
+**[LatestVersion is 1.0.1](https://bintray.com/ederdoski/Maven/simple-cartesian-plotter)**
 
 Add the following in your app's build.gradle file:
 
@@ -20,7 +20,7 @@ repositories {
 }
 
 dependencies {
-    implementation "com.ederdoski.simple-cartesian-plotter:simplecartesianplotter:1.0.1"
+    implementation 'com.ederdoski.plotter:simplecartesianplotter:1.0'
 }
 ```
 
