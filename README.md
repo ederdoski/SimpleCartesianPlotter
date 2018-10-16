@@ -1,6 +1,6 @@
 # Android Simple Cartesian Plotter
 
-![Example](img/simpleCartesianPlotter.gif)
+![Example](img/simpleCartesianPlotter.gif) ![android-arsenal](img/AASimpleCartesian.png)
 
 ## Introduction
 
