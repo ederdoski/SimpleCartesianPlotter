@@ -1,4 +1,4 @@
-# Android Simple Cartesian Plotter ![android-arsenal](img/AASimpleCartesian.png)
+# Android Simple Cartesian Plotter [![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-Android%20Simple%20Cartesian%20Plotter-green.svg?style=flat )]( https://android-arsenal.com/details/1/7223 )
 
 ![Example](img/simpleCartesianPlotter.gif) 
 
